@@ -1,0 +1,6 @@
+{
+  "name": "RawPS - Growtopia Private Server",
+  "description": "RawPS Growtopia Private Server - Mid Economy, Custom Items, Auto Event, Community & Link Hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

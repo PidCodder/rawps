@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #022c22;
+    color: #ecfdf5;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Emerald Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #022c22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 9999px;
+  border: 2px solid #022c22;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}
+
+/* Firefox scrollbar support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 #022c22;
+}
+
+.bg-cream {
+  background-color: #ffffff;
+}
+
+.bg-cream-btn {
+  background-color: #ecfdf5;
+}
+
+.bg-cream-btn:hover {
+  background-color: #d1fae5;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
